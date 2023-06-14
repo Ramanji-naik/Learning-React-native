@@ -28,7 +28,6 @@ import { Text, View } from 'react-native';
 import Companytasks from "./Companytasks";
 const App=()=>{
   return(
-   
     <Companytasks />
   )
 }
