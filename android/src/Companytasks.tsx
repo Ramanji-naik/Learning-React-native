@@ -6,6 +6,10 @@ const Companytasks=()=>{
 return(
         <View>
           <Text>hgdjfhga</Text>
+          <FlatList
+          data={}
+          renderItem={}
+          />
             
         </View>
     )
