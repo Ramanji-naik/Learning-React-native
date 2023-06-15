@@ -6,12 +6,7 @@ const Counter = () => {
     const [counter, setCounter] = useState(0)
     const incrementfunction=()=>setCounter(counter+1)
     const decrementfunction=()=>setCounter(counter-1)
-        
-            
-        
-    
-    
-    return (
+ return (
         <View>
 
            <Text>counter:{counter}</Text>
