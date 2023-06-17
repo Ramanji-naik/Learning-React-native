@@ -20,6 +20,9 @@ const SearchComponent = () => {
     const handlesearchremove = () => {
         return setSearcheddata('')
     }
+    const renderemptydata =()=>{
+        return <Text style={{fontSize:20,marginLeft:20}}>No data found </Text>
+    }
 
     const filteredData = renderdata.filter(item =>{
         return item.title.toLowerCase().includes(searcheddata.toLowerCase());
@@ -41,13 +44,17 @@ const SearchComponent = () => {
                     </TouchableOpacity>
                 }
             </View>
-            {searcheddata && searcheddata.length > 2 &&
-                <FlatList
+            {filteredData.length>0 && searcheddata.length > 2 ? 
+               ( <FlatList
                     data={filteredData}
                     extraData={filteredData}
                     renderItem={handlerenderdata}
                     keyExtractor={(item) => item.id.toString()}
                 />
+                ):
+                (
+                    renderemptydata()
+                )
             }
             
         </View>
