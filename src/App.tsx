@@ -6,12 +6,17 @@
 
 import React from "react";
 import { Text, View } from 'react-native';
-import Companytasks from "./Companytasks";
-import Autoscroll from "./Autoscroll";
-import Counter from "./Counter";
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import SearchComponent from "./SearchComponent";
+import FetchedData from "./FetchedData";
+
 const App=()=>{
   return(
-    <Counter />
+    // <FetchedData />
+   <SearchComponent />
   )
 }
 export default App;
+
+
+
