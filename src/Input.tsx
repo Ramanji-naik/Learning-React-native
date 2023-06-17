@@ -61,6 +61,7 @@ const Input = () => {
                 placeholder="Enter food Task"
                 onChangeText={ChangeHandler}
                 value={food}
+                
             />
             <TouchableOpacity onPress={SubmitHandler}
                 style={{ margin: 20, borderWidth: 2 }}>
